@@ -45,7 +45,7 @@ class Eng_rusFragment : Fragment() {
         val imeManage =
             requireActivity().applicationContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         //      imeManage.showInputMethodPicker();
-        val methodInmput: List<*> = imeManage.getEnabledInputMethodSubtypeList()
+       // val methodInmput: List<*> = imeManage.getEnabledInputMethodSubtypeList()
         //imeManage.setInputMethod(null, "jp.co.omronsoft.openwnn/.OpenWnnJAJP");
     }
 

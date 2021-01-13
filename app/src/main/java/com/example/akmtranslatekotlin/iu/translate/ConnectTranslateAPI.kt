@@ -20,21 +20,22 @@ class ConnectTranslateAPI(private val translateRule: StructuraTranslate) {
     @get:Throws(IOException::class)
     val respondOnPOST: String
         get() {
-            val client: OkHttpClient = OkHttpClient().newBuilder()
-                .build()
-            val mediaType: MediaType? = "application/json".toMediaTypeOrNull()
-            val body: RequestBody =
-                RequestBody.create(mediaType, translateRule.getTextSourceForGSon())
-            val request: Request = Request.Builder()
-                .url("https://api.cognitive.microsofttranslator.com/translate?api-version=3.0" + translateRule.getToFrom())
-                .method("POST", body)
-                .addHeader("Ocp-Apim-Subscription-Key", "467a55e9232d43418688dd5fb21d345c")
-                .addHeader("Content-Type", "application/json")
-                .build()
-            Log.i(TAG, "запрос в апи: " + request.toString())
-            val response: Response = client.newCall(request).execute()
-            Log.i(TAG, "ответ из апи: " + request.toString())
-            return response.body().string()
+//            val client: OkHttpClient = OkHttpClient().newBuilder()
+//                .build()
+//            val mediaType: MediaType? = "application/json".toMediaTypeOrNull()
+//            val body: RequestBody =
+//                RequestBody.create(mediaType, translateRule.getTextSourceForGSon())
+//            val request: Request = Request.Builder()
+//                .url("https://api.cognitive.microsofttranslator.com/translate?api-version=3.0" + translateRule.getToFrom())
+//                .method("POST", body)
+//                .addHeader("Ocp-Apim-Subscription-Key", "467a55e9232d43418688dd5fb21d345c")
+//                .addHeader("Content-Type", "application/json")
+//                .build()
+//            Log.i(TAG, "запрос в апи: " + request.toString())
+//            val response: Response = client.newCall(request).execute()
+//            Log.i(TAG, "ответ из апи: " + request.toString())
+//            return response.body.toString()
+            return  ""
         }
 
     /*

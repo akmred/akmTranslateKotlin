@@ -1,10 +1,9 @@
 package com.example.akmtranslatekotlin.iu.translate
 
-package com.example.mywheather.iu.translate
-import com.google.gson.Gson
-import com.google.gson.GsonBuilder
-import com.google.gson.JsonElement
-import com.google.gson.JsonParser
+//import com.google.gson.Gson
+//import com.google.gson.GsonBuilder
+//import com.google.gson.JsonElement
+//import com.google.gson.JsonParser
 
 /*
 * Структура перевода
@@ -49,12 +48,13 @@ class StructuraTranslate(
     * Преобразует json текст в простой текст
     * */
     private fun fromGSon(textTranslateForGSon: String?): String {
-        var bodyResponse = BodyResponse()
-        val gsonBuilder = GsonBuilder()
-        gsonBuilder.create()
-        val gson = Gson()
-        bodyResponse = gson.fromJson(textTranslateForGSon, BodyResponse::class.java)
-        return bodyResponse.text
+//        var bodyResponse = BodyResponse()
+//        val gsonBuilder = GsonBuilder()
+//        gsonBuilder.create()
+//        val gson = Gson()
+//        bodyResponse = gson.fromJson(textTranslateForGSon, BodyResponse::class.java)
+//        return bodyResponse.text
+        return ""
     }
 
     /*
@@ -66,10 +66,11 @@ class StructuraTranslate(
     companion object {
         // This function prettifies the json response.
         private fun prettify(json_text: String): String {
-            val parser = JsonParser()
-            val json: JsonElement = parser.parse(json_text)
-            val gson: Gson = GsonBuilder().setPrettyPrinting().create()
-            return gson.toJson(json)
+//            val parser = JsonParser()
+//            val json: JsonElement = parser.parse(json_text)
+//            val gson: Gson = GsonBuilder().setPrettyPrinting().create()
+//            return gson.toJson(json)
+        return ""
         }
     }
 }
