@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_rus_eng"
-        android:name="com.example.mywheather.iu.rus_eng.rus_engFragment"
+        android:name="com.example.akmtranslatekotlin.iu.rus_eng.Rus_engFragment"
         android:label="rus_eng"
         tools:layout="@layout/fragment_rus_eng"/>
 
     <fragment
         android:id="@+id/navigation_eng_rus"
-        android:name="com.example.mywheather.iu.eng_rus.eng_rusFragment"
+        android:name="com.example.akmtranslatekotlin.iu.eng_rus.Eng_rusFragment"
         android:label="eng_rus"
         tools:layout="@layout/fragment_eng_rus"/>
 
     <fragment
         android:id="@+id/navigation_game"
-        android:name="com.example.mywheather.iu.game.GameFragment"
+        android:name="com.example.akmtranslatekotlin.iu.game.GameFragment"
         android:label="game"
         tools:layout="@layout/fragment_game"/>
 
